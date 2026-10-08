@@ -1,0 +1,493 @@
+import { Yacht, Destination } from '../types/yacht';
+
+export const YACHTS: Yacht[] = [
+  {
+    id: 'aurelia-78m',
+    name: 'AURELIA',
+    tagline: 'The Pinnacle of Mediterranean Grandeur',
+    builder: 'Feadship Shipyard, Haarlem',
+    yearBuilt: 2023,
+    refitYear: 2025,
+    lengthMeters: 78.4,
+    lengthFeet: 257,
+    guests: 12,
+    cabins: 7,
+    crew: 26,
+    beamMeters: 13.2,
+    draftMeters: 3.8,
+    cruisingSpeedKnots: 15.5,
+    maxSpeedKnots: 20.0,
+    weeklyRateEuros: 720000,
+    category: 'megayacht',
+    currentLocation: 'Port Hercule, Monaco',
+    summerCruisingZone: 'West Mediterranean (Amalfi, French Riviera, Sardinia)',
+    winterCruisingZone: 'Caribbean & Bahamas (St. Barths, Virgin Gorda)',
+    coverImage: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1600&q=85',
+    galleryImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Aft profile underway in the Mediterranean',
+        category: 'exterior',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Panoramic Sky Lounge with custom Italian travertine',
+        category: 'interior',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Owner’s Private Stateroom with 180° ocean horizon',
+        category: 'interior',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Teak sundeck infinity plunge pool and sunset bar',
+        category: 'sundeck',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Full beach club and dive tender garage',
+        category: 'toys',
+      },
+    ],
+    description:
+      'Commissioned for an art patron and built by Feadship, AURELIA embodies understated naval perfection. Featuring seven palatial staterooms, a glass-bottom aft swimming pool, touch-and-go certified helipad, and an expansive spa wellness sanctuary, she represents the gold standard of world-class charters.',
+    highlights: [
+      'Glass-bottom aft plunge pool spilling over the swim platform',
+      'Dedicated onboard wellness suite with Finnish sauna & cryo chamber',
+      'Certified touch-and-go helipad (Airbus ACH145 rated)',
+      'Dual 11-meter custom Cockwells limousine tenders',
+      'Michelin three-star trained executive chef & sommelier pair',
+    ],
+    amenities: [
+      {
+        name: 'Beach Club & Sea Terrace',
+        icon: 'Waves',
+        description: '140 m² teak fold-down ocean terrace with swim ladder and wet bar',
+      },
+      {
+        name: 'Helipad Deck',
+        icon: 'Plane',
+        description: 'Certified touch-and-go foredeck helipad with discreet fueling',
+      },
+      {
+        name: 'Holistic Spa',
+        icon: 'Sparkles',
+        description: 'Cold plunge pool, aromatherapy steam room, and full-time therapist',
+      },
+      {
+        name: 'Cinematic Salon',
+        icon: 'Film',
+        description: 'Dolby Atmos 4K private screening salon with plush velvet daybeds',
+      },
+    ],
+    waterToys: [
+      '11m Cockwells Executive Limousine Tender',
+      '8m Novurania Chase Tender',
+      '4x Sea-Doo RXT-X 300 Jet Skis',
+      '4x Fliteboard e-Foils (Series 3 Carbon)',
+      '6x Seabob F5-SR with underwater cameras',
+      'Inflatable 20m Aquaglide ocean pool with anti-jellyfish mesh',
+    ],
+    deckPlans: [
+      {
+        deckName: 'Sun Deck',
+        features: ['Jacuzzi plunge pool', 'Sun loungers', '360° Teak cocktail bar', 'Observation settee'],
+      },
+      {
+        deckName: 'Bridge Deck',
+        features: ['Wheelhouse', 'Captain cabin', 'Al fresco dining table for 14', 'Sky lounge & humidor'],
+      },
+      {
+        deckName: 'Main Deck',
+        features: ['Full-beam Master suite with twin dressing rooms', 'Main salon', 'Formal dining', 'Aft pool'],
+      },
+      {
+        deckName: 'Lower Deck',
+        features: ['6 VIP staterooms with ensuite marble baths', 'Beach club', 'Tender garage', 'Crew quarters'],
+      },
+    ],
+    brokerContact: {
+      name: 'Alexander Vance',
+      title: 'Managing Director, Private Charters',
+      office: 'Monaco · Quai Antoine 1er',
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
+    },
+  },
+  {
+    id: 'solstice-64m',
+    name: 'SOLSTICE',
+    tagline: 'Italian Haute Horlogerie on Open Sea',
+    builder: 'Benetti, Livorno',
+    yearBuilt: 2024,
+    refitYear: undefined,
+    lengthMeters: 64.0,
+    lengthFeet: 210,
+    guests: 12,
+    cabins: 6,
+    crew: 16,
+    beamMeters: 11.5,
+    draftMeters: 3.2,
+    cruisingSpeedKnots: 14.0,
+    maxSpeedKnots: 17.5,
+    weeklyRateEuros: 480000,
+    category: 'superyacht',
+    currentLocation: 'Marina di Portofino, Italy',
+    summerCruisingZone: 'Corsica, Sardinia & Amalfi Coast',
+    winterCruisingZone: 'Leeward Islands, St. Martin & Antigua',
+    coverImage: 'https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1600&q=85',
+    galleryImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1505705694340-019e1e335916?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Sleek Italian bow slicing through Tyrrhenian waters',
+        category: 'exterior',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Main salon wrapped in fluted walnut and brushed bronze',
+        category: 'interior',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Upper observation terrace with custom daybeds',
+        category: 'sundeck',
+      },
+    ],
+    description:
+      'Engineered with Benetti’s pioneering hybrid propulsion and styled by Giorgio Cassetta, SOLSTICE combines zero-emission silent anchoring with razor-sharp naval lines. Her split-level master suite offers private foredeck hot tub access.',
+    highlights: [
+      'Benetti E-Mode hybrid system: 6 hours silent electric anchoring',
+      'Split-level master stateroom with private forward terrace',
+      'Expansive sundeck with outdoor cinema and teppanyaki grill',
+      'Zero-speed quantum gyro stabilizers for motionless anchoring',
+    ],
+    amenities: [
+      {
+        name: 'Silent Electric Mooring',
+        icon: 'BatteryCharging',
+        description: 'Run all air conditioning and domestic systems overnight without generator hum',
+      },
+      {
+        name: 'Al Fresco Teppanyaki',
+        icon: 'Utensils',
+        description: 'Open air chef grill on the sundeck paired with panoramic dining',
+      },
+      {
+        name: 'Sea-Level Gym',
+        icon: 'Activity',
+        description: 'Technogym equipment positioned directly over open water folding doors',
+      },
+    ],
+    waterToys: [
+      '9m Castoldi Jet Tender',
+      '2x Yamaha FX Cruiser SVHO',
+      '3x Fliteboard e-Foils',
+      '4x Stand-up carbon paddleboards',
+      'Complete Mares scuba diving gear set for 8 guests',
+    ],
+    deckPlans: [
+      {
+        deckName: 'Sun Deck',
+        features: ['Teppanyaki grill', 'Jacuzzi', 'Outdoor projector cinema', 'Sun loungers'],
+      },
+      {
+        deckName: 'Upper Deck',
+        features: ['Sky lounge', 'Cocktail bar', 'Al fresco dining', 'Captain quarters'],
+      },
+      {
+        deckName: 'Main Deck',
+        features: ['Split-level owner suite with private bow lounge', 'Main salon', 'Aft terrace'],
+      },
+      {
+        deckName: 'Lower Deck',
+        features: ['5 guest suites', 'Gym and beach club', 'Tender garage'],
+      },
+    ],
+    brokerContact: {
+      name: 'Claire de Montmirail',
+      title: 'Senior Charter Specialist',
+      office: 'Antibes · Port Vauban',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
+    },
+  },
+  {
+    id: 'zephyr-45m',
+    name: 'ZEPHYR ODYSSEY',
+    tagline: 'Pure Carbon-Sailing Avant-Garde',
+    builder: 'Sunreef Yachts, Gdańsk',
+    yearBuilt: 2024,
+    refitYear: undefined,
+    lengthMeters: 44.8,
+    lengthFeet: 147,
+    guests: 10,
+    cabins: 5,
+    crew: 9,
+    beamMeters: 16.6,
+    draftMeters: 2.4,
+    cruisingSpeedKnots: 11.5,
+    maxSpeedKnots: 15.0,
+    weeklyRateEuros: 295000,
+    category: 'catamaran',
+    currentLocation: 'Paros, Cyclades, Greece',
+    summerCruisingZone: 'Greek Cyclades, Ionian Islands, Dodecanese',
+    winterCruisingZone: 'Bahamas & Exuma Cays (Shallow draft access)',
+    coverImage: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1600&q=85',
+    galleryImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Full sails deployed under radiant Aegean skies',
+        category: 'exterior',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Immense 16.6m beam salon with wrap-around solar glass',
+        category: 'interior',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Foredeck trampoline lounge hovering over turquoise waters',
+        category: 'sundeck',
+      },
+    ],
+    description:
+      'With a colossal 16.6-meter beam and an ultra-shallow 2.4-meter draft, ZEPHYR slips into shallow Caribbean sandbars and hidden Aegean coves where conventional monohulls cannot tread. Solar-skin integrated carbon sails generate up to 45kW of clean energy.',
+    highlights: [
+      'Unrivaled stability with 16.6m beam: zero roll at anchor',
+      'Ultra-shallow draft for navigating untouched Caribbean sandbars',
+      'Proprietary solar-skin technology powering zero-emission quiet nights',
+      'Dual hydraulic aft platforms creating a 70 m² private beach',
+    ],
+    amenities: [
+      {
+        name: 'Ocean Trampoline Lounge',
+        icon: 'Sun',
+        description: 'Vast forward woven net lounges suspended 2 meters over turquoise sea',
+      },
+      {
+        name: 'Eco-Solar System',
+        icon: 'Zap',
+        description: 'Solar panels integrated into composite hull curves and superstructure',
+      },
+      {
+        name: 'Kite & Foil Hub',
+        icon: 'Wind',
+        description: 'Certified IKO kiteboarding instructor and foil coach on permanent crew',
+      },
+    ],
+    waterToys: [
+      '6.5m Highfield Aluminum Patrol Tender',
+      '4x Core XR8 Kites & boards',
+      '3x Lift Foils eFoil Carbon 5’4',
+      '2x Seabob F5S',
+      'Wing-foil gear and sea kayaks',
+    ],
+    deckPlans: [
+      {
+        deckName: 'Flybridge',
+        features: ['Helm station', 'Wet bar', 'Dual sunbeds', 'Retractable hardtop'],
+      },
+      {
+        deckName: 'Main Deck',
+        features: ['100 m² open salon', 'Dining for 12', 'Forward sunken lounge', 'Cockpit terrace'],
+      },
+      {
+        deckName: 'Hulls',
+        features: ['Master suite with private walkout deck', '4 ensuite guest staterooms', 'Crew quarters'],
+      },
+    ],
+    brokerContact: {
+      name: 'Elena Rostova',
+      title: 'Greek & Aegean Charter Director',
+      office: 'Athens · Flisvos Marina',
+      avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80',
+    },
+  },
+  {
+    id: 'chronos-92m',
+    name: 'CHRONOS',
+    tagline: 'The Autonomous Arctic & Deep Ocean Explorer',
+    builder: 'Lürssen Yachts, Bremen',
+    yearBuilt: 2022,
+    refitYear: 2025,
+    lengthMeters: 92.5,
+    lengthFeet: 303,
+    guests: 14,
+    cabins: 8,
+    crew: 32,
+    beamMeters: 15.4,
+    draftMeters: 4.4,
+    cruisingSpeedKnots: 14.5,
+    maxSpeedKnots: 18.0,
+    weeklyRateEuros: 950000,
+    category: 'explorer',
+    currentLocation: 'Reykjavik, Iceland',
+    summerCruisingZone: 'Norwegian Fjords, Svalbard & Greenland',
+    winterCruisingZone: 'Patagonia, Drake Passage & Antarctica',
+    coverImage: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1600&q=85',
+    galleryImages: [
+      {
+        url: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Ice-class hull anchored among Arctic glaciers',
+        category: 'exterior',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Expedition library with stone fireplace & nautical charts',
+        category: 'interior',
+      },
+      {
+        url: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80',
+        caption: 'Observation lounge with heated panoramic glass',
+        category: 'interior',
+      },
+    ],
+    description:
+      'Built to Polar Class 5 standards by Lürssen, CHRONOS is an authentic trans-oceanic research cruiser refitted for ultra-luxury voyaging. With an 8,000 nautical mile range, certified ice-breaking capabilities, deep-sea research submarine, and commercial helideck with enclosed hangar.',
+    highlights: [
+      'Polar Class 5 ice-strengthened steel hull for Antarctic expeditions',
+      'Triton 3300/3 deep-sea submersible (dive depth 1,000 meters / 3,300 ft)',
+      'Fully enclosed helicopter hangar with refueling station',
+      '8,000 nautical mile autonomous range at cruising speed',
+      'Onboard marine biologist and polar expedition guides',
+    ],
+    amenities: [
+      {
+        name: 'Triton 3-Person Submarine',
+        icon: 'Compass',
+        description: 'Explore bioluminescent deep trenches and shipwrecks up to 1,000m depth',
+      },
+      {
+        name: 'Heated Arctic Observation Deck',
+        icon: 'Eye',
+        description: 'Radiant heated glass floor and wind-shielded outdoor lounge for whale watching',
+      },
+      {
+        name: 'Hospital & Decompression Chamber',
+        icon: 'Shield',
+        description: 'Full medical facility with dedicated emergency doctor for remote expeditions',
+      },
+    ],
+    waterToys: [
+      'Triton 3300/3 Personal Submersible',
+      '2x 12m Arctic-grade Metal Shark tenders',
+      '4x Zodiac Milpro Mark V with heavy-duty outboards',
+      '4x Skidoo Expedition snowmobiles',
+      'Complete dry suit diving equipment and underwater imaging gear',
+    ],
+    deckPlans: [
+      {
+        deckName: 'Helideck & Hangar',
+        features: ['Full landing pad', 'Enclosed helicopter hangar', 'Refueling bay'],
+      },
+      {
+        deckName: 'Bridge Deck',
+        features: ['Ice-navigation bridge', 'Expedition research lab', 'Observation salon'],
+      },
+      {
+        deckName: 'Owner Deck',
+        features: ['Private master penthouse', 'Study with fireplace', 'Private aft terrace'],
+      },
+      {
+        deckName: 'Main Deck',
+        features: ['7 VIP guest staterooms', 'Formal dining', 'Cinema', 'Submarine launch bay'],
+      },
+    ],
+    brokerContact: {
+      name: 'Henrik Lindqvist',
+      title: 'Expedition & Polar Specialist',
+      office: 'Geneva · Rue du Rhône',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
+    },
+  },
+];
+
+export const DESTINATIONS: Destination[] = [
+  {
+    id: 'amalfi-capri',
+    title: 'Amalfi Coast & Capri',
+    region: 'Tyrrhenian Sea',
+    country: 'Italy',
+    bestMonths: 'May - October',
+    heroImage: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80',
+    coordinates: '40.6333° N, 14.6029° E',
+    description:
+      'Perpendicular limestone cliffs tumbling into cobalt waters, ancient lemon groves clinging to terraces, and the glittering glamour of Capri’s Piazzetta. Discover secluded grottos only accessible by yacht tender before mooring beneath the iconic Faraglioni rocks.',
+    highlights: [
+      'Private sunset mooring directly beneath Faraglioni rocks',
+      'Tender excursion inside the clandestine Green and White Sea Grottos',
+      'Exclusive reservation at Conca del Sogno beach club in Nerano',
+      'Starlit dinner overlooking Positano’s illuminated cascade',
+    ],
+    recommendedYachtIds: ['aurelia-78m', 'solstice-64m'],
+    itinerarySummary: {
+      durationDays: 7,
+      anchorages: ['Capri Marina Grande', 'Nerano Bay', 'Positano Roadstead', 'Amalfi & Ravello', 'Ischia Castello Aragonese'],
+    },
+  },
+  {
+    id: 'french-riviera-monaco',
+    title: 'Monaco & Côte d’Azur',
+    region: 'Ligurian Coast',
+    country: 'Monaco & France',
+    bestMonths: 'April - September',
+    heroImage: 'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1200&q=80',
+    coordinates: '43.7384° N, 7.4246° E',
+    description:
+      'The timeless epicenter of Mediterranean superyacht heritage. From private quayside berths in Port Hercule during grand prix weekends to the quiet turquoise anchorages of Îles de Lérins and Saint-Jean-Cap-Ferrat.',
+    highlights: [
+      'Front-row VIP berth at Monaco Port Hercule',
+      'Champagne lunch in the sheltered cove between Sainte-Marguerite islands',
+      'Helicopter transfer directly from yacht foredeck to Saint-Tropez Pampelonne',
+      'Private sommelier cellar tour in historic Provence estates',
+    ],
+    recommendedYachtIds: ['aurelia-78m', 'solstice-64m'],
+    itinerarySummary: {
+      durationDays: 7,
+      anchorages: ['Port Hercule, Monaco', 'Cap d’Ail', 'Saint-Jean-Cap-Ferrat', 'Cannes Îles de Lérins', 'Baie des Canoubiers, St. Tropez'],
+    },
+  },
+  {
+    id: 'cyclades-greece',
+    title: 'Cyclades Archipelago',
+    region: 'Aegean Sea',
+    country: 'Greece',
+    bestMonths: 'June - September',
+    heroImage: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=80',
+    coordinates: '36.9850° N, 25.1321° E',
+    description:
+      'Chalk-white villages perched over sapphire seas, sun-drenched marble quarries, and untamed meltemi breezes. Sail seamlessly between private secluded bays in Koufonisia and the electric sunset energy of Mykonos and Delos.',
+    highlights: [
+      'Anchor in the ancient sanctuary of uninhabited Delos at sunrise',
+      'Explore translucent turquoise sea caves in the Small Cyclades (Koufonisia)',
+      'Private sunset wine tasting in Santorini caldera away from cruise ships',
+      'Fresh sea-urchin carpaccio prepared by your private chef on a desert islet',
+    ],
+    recommendedYachtIds: ['zephyr-45m', 'solstice-64m'],
+    itinerarySummary: {
+      durationDays: 8,
+      anchorages: ['Athens Astir Marina', 'Mykonos Delos Anchorage', 'Paros Naoussa', 'Koufonisia Pano', 'Santorini Caldera'],
+    },
+  },
+  {
+    id: 'exumas-bahamas',
+    title: 'Exuma Cays & Out Islands',
+    region: 'Caribbean & Atlantic',
+    country: 'Bahamas',
+    bestMonths: 'November - May',
+    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+    coordinates: '24.2885° N, 76.5492° W',
+    description:
+      'Three hundred and sixty-five emerald cays ringed by the clearest waters on earth. Miles of untouched white sandbars that vanish with the tide, underwater airplane wrecks, and private island hideaways.',
+    highlights: [
+      'Snorkel Thunderball Grotto illuminated by noon sunbeams',
+      'Private sandbar setup with champagne pavilion at low tide',
+      'Swim alongside gentle nurse sharks in Compass Cay lagoon',
+      'Night-time bioluminescent paddling in protected mangroves',
+    ],
+    recommendedYachtIds: ['zephyr-45m', 'aurelia-78m'],
+    itinerarySummary: {
+      durationDays: 7,
+      anchorages: ['Nassau Atlantis Marina', 'Allan’s Cay', 'Compass Cay', 'Staniel Cay & Big Major', 'Musha Cay & Little Pipe'],
+    },
+  },
+];

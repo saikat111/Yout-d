@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #080C14;
+    color: #F1F5F9;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-mono-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hide scrollbar for clean mobile horizontal card rails */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

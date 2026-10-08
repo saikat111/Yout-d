@@ -1,0 +1,7 @@
+{
+  "name": "PELAGOS - Luxury Yacht & Travel Android Prototype",
+  "description": "High-fidelity Android UI/UX prototype for PELAGOS, a premier luxury yacht charter and bespoke expedition atelier.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
